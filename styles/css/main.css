@@ -10,16 +10,35 @@
   font-size: 1.66rem;
 }
 
+@media (min-width: 769px) {
+  .h--large {
+    font-size: 2.44rem;
+  }
+}
+
 /* Paragrahps */
 .text {
   color: #9fabb2;
   font-weight: 400;
   text-align: center;
   line-height: 1.6;
+  max-width: 530px;
 }
 
 .text--big {
   font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .text--big {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .text--big {
+    max-width: 620px;
+  }
 }
 
 /* Buttons */
