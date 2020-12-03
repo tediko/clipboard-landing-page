@@ -15,6 +15,7 @@
   color: #9fabb2;
   font-weight: 400;
   text-align: center;
+  line-height: 1.6;
 }
 
 .text--big {
@@ -37,7 +38,7 @@
 .btn--cyan {
   background: #26baa4;
   border-bottom: 3px solid #1d907f;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   box-shadow: 0 8px 20px rgba(38, 186, 164, 0.4);
 }
 

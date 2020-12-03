@@ -14,6 +14,7 @@
     color: $c-blue-grayish;
     font-weight: 400;
     text-align: center;
+    line-height: 1.6;
 
     &--big {
         font-size: 0.9rem;
@@ -35,7 +36,7 @@
     &--cyan {
         background: $c-cyan-strong;
         border-bottom: 3px solid darken($c-cyan-strong, 10);
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         box-shadow: 0 8px 20px transparentize($c-cyan-strong, 0.6);
     }
 
