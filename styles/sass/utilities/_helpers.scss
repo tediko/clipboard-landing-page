@@ -2,6 +2,7 @@
 .h {
     color: $c-blue-grayish-dark;
     font-weight: 600;
+    text-align: center;
 
     &--large {
         font-size: 1.66rem;
@@ -12,6 +13,7 @@
 .text {
     color: $c-blue-grayish;
     font-weight: 400;
+    text-align: center;
 
     &--big {
         font-size: 0.9rem;
