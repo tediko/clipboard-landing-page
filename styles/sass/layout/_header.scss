@@ -1,0 +1,22 @@
+.header {
+    margin-top: 120px;
+    margin-bottom: 160px;
+
+    &__container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-bottom: 55px;
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+    }
+
+    &__subheading {
+        margin-bottom: 50px;
+    }
+}

@@ -64,4 +64,27 @@ body {
   background-repeat: no-repeat;
   padding: 0 31px;
 }
+
+.header {
+  margin-top: 120px;
+  margin-bottom: 160px;
+}
+
+.header__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.header__logo {
+  margin-bottom: 55px;
+}
+
+.header__heading {
+  margin-bottom: 20px;
+}
+
+.header__subheading {
+  margin-bottom: 50px;
+}
 /*# sourceMappingURL=main.css.map */
