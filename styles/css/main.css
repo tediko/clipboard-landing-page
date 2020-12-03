@@ -22,7 +22,7 @@
 
 @media (min-width: 769px) {
   .h--big {
-    font-size: 1.88rem;
+    font-size: 1.93rem;
   }
 }
 
@@ -42,6 +42,7 @@
   font-weight: 400;
   text-align: center;
   line-height: 1.5;
+  max-width: 530px;
 }
 
 .text--big {
@@ -62,16 +63,17 @@
 
 .text--med {
   font-size: 0.9rem;
+  line-height: 1.7;
 }
 
 @media (min-width: 768px) {
   .text--med {
-    font-size: 1rem;
+    font-size: 1.01rem;
   }
 }
 
 .text--small {
-  font-size: 0.80rem;
+  font-size: 0.9rem;
 }
 
 @media (min-width: 768px) {
@@ -140,7 +142,7 @@ body {
 
 .header {
   margin-top: 128px;
-  margin-bottom: 160px;
+  margin-bottom: 151px;
 }
 
 .header__container {
@@ -165,5 +167,49 @@ body {
   .header__cta {
     display: flex;
   }
+}
+
+.snippets {
+  margin-bottom: 160px;
+}
+
+.snippets__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.snippets__heading {
+  margin-bottom: 20px;
+}
+
+.snippets__subheading {
+  margin-bottom: 70px;
+  max-width: 720px;
+}
+
+.snippets__content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .snippets__content {
+    flex-flow: row;
+  }
+}
+
+.snippets__image {
+  width: 100%;
+  margin-bottom: 72px;
+}
+
+.snippets__feature:not(:last-child) {
+  margin-bottom: 72px;
+}
+
+.snippets__feature-heading {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */

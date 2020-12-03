@@ -1,0 +1,44 @@
+.snippets {
+    margin-bottom: 160px;
+
+    &__container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+    }
+
+    &__subheading {
+        margin-bottom: 70px;
+        max-width: 720px;
+    }
+
+    &__content {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        @media (min-width: 769px) {
+            flex-flow: row;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        margin-bottom: 72px;
+    }
+
+    &__feature {
+
+        &:not(:last-child) {
+            margin-bottom: 72px;
+        }
+    }
+
+    &__feature-heading {
+        margin-bottom: 10px;
+    }
+}
