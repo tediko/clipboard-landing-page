@@ -8,7 +8,7 @@
         font-size: 1.66rem;
 
         @media (min-width: 769px) {
-            font-size: 2.44rem;
+            font-size: 2.48rem;
         }
     }
 }
@@ -18,18 +18,18 @@
     color: $c-blue-grayish;
     font-weight: 400;
     text-align: center;
-    line-height: 1.6;
+    line-height: 1.5;
     max-width: 530px;
 
     &--big {
         font-size: 0.9rem;
 
         @media (min-width: 768px) {
-            font-size: 1.11rem;
+            font-size: 1.13rem;
         }
 
         @media (min-width: 1000px) {
-            max-width: 680px;
+            max-width: 700px;
         }
     }
 }
@@ -47,8 +47,9 @@
     border-radius: 50px;
 
     @media (min-width: 769px) {
-        height: 58px;
-        width: 221px;
+        height: 55px;
+        width: 224px;
+        font-size: 1rem;
     }
 
     &--cyan {
