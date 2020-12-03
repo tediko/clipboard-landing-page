@@ -16,13 +16,32 @@
   }
 }
 
+.h--big {
+  font-size: 1.61rem;
+}
+
+@media (min-width: 769px) {
+  .h--big {
+    font-size: 1.88rem;
+  }
+}
+
+.h--med {
+  font-size: 1.22rem;
+}
+
+@media (min-width: 769px) {
+  .h--med {
+    font-size: 1.33rem;
+  }
+}
+
 /* Paragrahps */
 .text {
   color: #9fabb2;
   font-weight: 400;
   text-align: center;
   line-height: 1.5;
-  max-width: 530px;
 }
 
 .text--big {
@@ -38,6 +57,26 @@
 @media (min-width: 1000px) {
   .text--big {
     max-width: 700px;
+  }
+}
+
+.text--med {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .text--med {
+    font-size: 1rem;
+  }
+}
+
+.text--small {
+  font-size: 0.80rem;
+}
+
+@media (min-width: 768px) {
+  .text--small {
+    font-size: 0.88rem;
   }
 }
 
