@@ -31,13 +31,13 @@
 
 @media (min-width: 768px) {
   .text--big {
-    font-size: 1rem;
+    font-size: 1.11rem;
   }
 }
 
 @media (min-width: 1000px) {
   .text--big {
-    max-width: 620px;
+    max-width: 680px;
   }
 }
 
@@ -54,11 +54,25 @@
   border-radius: 50px;
 }
 
+@media (min-width: 769px) {
+  .btn {
+    height: 58px;
+    width: 221px;
+  }
+}
+
 .btn--cyan {
   background: #26baa4;
   border-bottom: 3px solid #1d907f;
   margin-bottom: 20px;
   box-shadow: 0 8px 20px rgba(38, 186, 164, 0.4);
+}
+
+@media (min-width: 769px) {
+  .btn--cyan {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
 }
 
 .btn--blue {
@@ -105,5 +119,11 @@ body {
 
 .header__subheading {
   margin-bottom: 50px;
+}
+
+@media (min-width: 769px) {
+  .header__cta {
+    display: flex;
+  }
 }
 /*# sourceMappingURL=main.css.map */

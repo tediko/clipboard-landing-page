@@ -19,4 +19,11 @@
     &__subheading {
         margin-bottom: 50px;
     }
+
+    &__cta {
+
+        @media (min-width: 769px) {
+            display: flex;
+        }
+    }
 }
