@@ -1,0 +1,45 @@
+/* Headings */
+.h {
+    color: $c-blue-grayish-dark;
+    font-weight: 600;
+
+    &--large {
+        font-size: 1.66rem;
+    }
+}
+
+/* Paragrahps */
+.text {
+    color: $c-blue-grayish;
+    font-weight: 400;
+
+    &--big {
+        font-size: 0.9rem;
+    }
+}
+
+/* Buttons */
+.btn {
+    font-family: $ff-primary;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #fff;
+    border: none;
+    width: 100%;
+    height: 51px;
+    border-radius: 50px;
+
+    &--cyan {
+        background: $c-cyan-strong;
+        border-bottom: 3px solid darken($c-cyan-strong, 10);
+        margin-bottom: 25px;
+        box-shadow: 0 8px 20px transparentize($c-cyan-strong, 0.6);
+    }
+
+    &--blue {
+        background: $c-blue-light;
+        border-bottom: 3px solid darken($c-blue-light, 5);
+        box-shadow: 0 8px 20px transparentize($c-blue-light, 0.6);
+    }
+}

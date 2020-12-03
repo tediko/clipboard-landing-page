@@ -1,4 +1,50 @@
+/* Headings */
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+.h {
+  color: #4c545d;
+  font-weight: 600;
+}
+
+.h--large {
+  font-size: 1.66rem;
+}
+
+/* Paragrahps */
+.text {
+  color: #9fabb2;
+  font-weight: 400;
+}
+
+.text--big {
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 51px;
+  border-radius: 50px;
+}
+
+.btn--cyan {
+  background: #26baa4;
+  border-bottom: 3px solid #1d907f;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(38, 186, 164, 0.4);
+}
+
+.btn--blue {
+  background: #6173ff;
+  border-bottom: 3px solid #475dff;
+  box-shadow: 0 8px 20px rgba(97, 115, 255, 0.4);
+}
+
 * {
   margin: 0;
   padding: 0;
