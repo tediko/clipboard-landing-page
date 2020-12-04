@@ -32,7 +32,7 @@
 
 @media (min-width: 769px) {
   .h--med {
-    font-size: 1.33rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -42,7 +42,6 @@
   font-weight: 400;
   text-align: center;
   line-height: 1.5;
-  max-width: 530px;
 }
 
 .text--big {
@@ -52,12 +51,6 @@
 @media (min-width: 768px) {
   .text--big {
     font-size: 1.13rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  .text--big {
-    max-width: 700px;
   }
 }
 
@@ -74,6 +67,7 @@
 
 .text--small {
   font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 @media (min-width: 768px) {
@@ -161,6 +155,13 @@ body {
 
 .header__subheading {
   margin-bottom: 48px;
+  max-width: 530px;
+}
+
+@media (min-width: 1000px) {
+  .header__subheading {
+    max-width: 700px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -170,13 +171,20 @@ body {
 }
 
 .snippets {
-  margin-bottom: 160px;
+  margin-bottom: 154px;
 }
 
 .snippets__container {
   display: flex;
   flex-flow: column;
   align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .snippets__container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .snippets__heading {
@@ -197,6 +205,21 @@ body {
 @media (min-width: 769px) {
   .snippets__content {
     flex-flow: row;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 1100px) {
+  .snippets__content {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 769px) {
+  .snippets__hero {
+    position: relative;
+    left: -63px;
+    top: 10px;
   }
 }
 
@@ -205,11 +228,43 @@ body {
   margin-bottom: 72px;
 }
 
+@media (min-width: 769px) {
+  .snippets__image {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1100px) {
+  .snippets__feature-wrapper {
+    margin-left: 46px;
+    margin-top: 77px;
+  }
+}
+
 .snippets__feature:not(:last-child) {
   margin-bottom: 72px;
 }
 
+@media (min-width: 769px) {
+  .snippets__feature:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+
 .snippets__feature-heading {
   margin-bottom: 10px;
+}
+
+@media (min-width: 769px) {
+  .snippets__feature-heading {
+    text-align: left;
+  }
+}
+
+@media (min-width: 769px) {
+  .snippets__feature-text {
+    max-width: 340px;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=main.css.map */

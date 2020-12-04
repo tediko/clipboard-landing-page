@@ -1,10 +1,15 @@
 .snippets {
-    margin-bottom: 160px;
+    margin-bottom: 154px;
 
     &__container {
         display: flex;
         flex-flow: column;
         align-items: center;
+
+        @media (min-width: 1200px) {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
     }
 
     &__heading {
@@ -23,22 +28,60 @@
 
         @media (min-width: 769px) {
             flex-flow: row;
+            align-self: flex-start;
+        }
+
+        @media (min-width: 1100px) {
+            align-items: flex-start;
+        }
+    }
+
+    &__hero {
+        @media (min-width: 769px) {
+            position: relative;
+            left: -63px;
+            top: 10px;
         }
     }
 
     &__image {
         width: 100%;
         margin-bottom: 72px;
+
+        @media (min-width: 769px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__feature-wrapper {
+        @media (min-width: 1100px) {
+            margin-left: 46px;
+            margin-top: 77px;
+        }
     }
 
     &__feature {
-
         &:not(:last-child) {
             margin-bottom: 72px;
+
+            @media (min-width: 769px) {
+                margin-bottom: 64px;
+            }
         }
     }
 
     &__feature-heading {
         margin-bottom: 10px;
+        
+        @media (min-width: 769px) {
+            text-align: left;
+        }
+    }
+
+    &__feature-text {
+        @media (min-width: 769px) {
+            max-width: 340px;
+            text-align: left;
+        }
     }
 }
