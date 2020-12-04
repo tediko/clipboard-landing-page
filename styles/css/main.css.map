@@ -11,7 +11,8 @@
         "../sass/layout/_header.scss",
         "../sass/layout/_snippets.scss",
         "../sass/layout/_clipboard.scss",
-        "../sass/layout/_tools.scss"
+        "../sass/layout/_tools.scss",
+        "../sass/layout/_partners.scss"
     ],
     "names": [],
     "file": "main.css"
