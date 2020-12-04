@@ -10,7 +10,8 @@
         "../sass/base/_typography.scss",
         "../sass/layout/_header.scss",
         "../sass/layout/_snippets.scss",
-        "../sass/layout/_clipboard.scss"
+        "../sass/layout/_clipboard.scss",
+        "../sass/layout/_tools.scss"
     ],
     "names": [],
     "file": "main.css"
