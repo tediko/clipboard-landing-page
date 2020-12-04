@@ -398,4 +398,23 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+.download {
+  margin-bottom: 154px;
+}
+
+.download__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.download__heading {
+  margin-bottom: 20px;
+}
+
+.download__subheading {
+  margin-bottom: 70px;
+  max-width: 690px;
+}
 /*# sourceMappingURL=main.css.map */
