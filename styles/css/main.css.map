@@ -13,7 +13,8 @@
         "../sass/layout/_clipboard.scss",
         "../sass/layout/_tools.scss",
         "../sass/layout/_partners.scss",
-        "../sass/layout/_download.scss"
+        "../sass/layout/_download.scss",
+        "../sass/layout/_footer.scss"
     ],
     "names": [],
     "file": "main.css"
