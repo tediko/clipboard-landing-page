@@ -267,4 +267,29 @@ body {
     text-align: left;
   }
 }
+
+.clipboard__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.clipboard__heading {
+  margin-bottom: 20px;
+}
+
+.clipboard__subheading {
+  margin-bottom: 50px;
+  max-width: 720px;
+}
+
+@media (min-width: 769px) {
+  .clipboard__subheading {
+    margin-bottom: 100px;
+  }
+}
+
+.clipboard__hero img {
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,26 @@
+.clipboard {
+    &__container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+    }
+
+    &__subheading {
+        margin-bottom: 50px;
+        max-width: 720px;
+
+        @media (min-width: 769px) {
+            margin-bottom: 100px;
+        }
+    }
+
+    &__hero {
+        img {
+            width: 100%;
+        }
+    }
+}
