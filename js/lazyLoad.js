@@ -2,7 +2,7 @@ const sections = document.querySelectorAll('[data-anim]');
 
 const options = {
     rootMargin: '0px',
-    threshold: 0.6
+    threshold: 0.52
 }
 
 const observer = new IntersectionObserver(entries => {
