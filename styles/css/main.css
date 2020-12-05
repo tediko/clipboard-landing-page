@@ -461,6 +461,11 @@ body {
   margin: 0 auto;
 }
 
+.partners__link:focus {
+  outline: 1px dashed rgba(97, 115, 255, 0.2);
+  outline-offset: 5px;
+}
+
 .download {
   margin-bottom: 154px;
 }

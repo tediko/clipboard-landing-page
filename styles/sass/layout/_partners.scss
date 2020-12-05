@@ -31,6 +31,11 @@
             display: block;
             margin: 0 auto;
         }
+
+        &:focus {
+            outline: 1px dashed transparentize($c-blue-light, 0.8);
+            outline-offset: 5px;
+        }
     }
 
 }
