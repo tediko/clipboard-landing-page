@@ -136,6 +136,15 @@ body {
   padding: 0 31px;
 }
 
+@media (min-width: 769px) {
+  body {
+    background: url("../../assets/img/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+}
+
 .header {
   margin-top: 128px;
   margin-bottom: 151px;
