@@ -78,6 +78,7 @@
 
 /* Buttons */
 .btn {
+  position: relative;
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 0.88rem;
   font-weight: 600;
@@ -87,6 +88,10 @@
   width: 100%;
   height: 51px;
   border-radius: 50px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
 @media (min-width: 769px) {
@@ -97,11 +102,38 @@
   }
 }
 
+.btn::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 300ms ease-in-out;
+}
+
 .btn--cyan {
   background: #26baa4;
   border-bottom: 3px solid #1d907f;
   margin-bottom: 20px;
   box-shadow: 0 8px 20px rgba(38, 186, 164, 0.4);
+}
+
+.btn--cyan::before {
+  background: #2acfb7;
+}
+
+.btn--cyan:hover {
+  border-color: #26baa4;
+  transform: scale(0.98);
+}
+
+.btn--cyan:hover::before {
+  transform: scaleY(1);
+  transform-origin: top;
 }
 
 @media (min-width: 769px) {
@@ -115,6 +147,20 @@
   background: #6173ff;
   border-bottom: 3px solid #475dff;
   box-shadow: 0 8px 20px rgba(97, 115, 255, 0.4);
+}
+
+.btn--blue::before {
+  background: #7a8aff;
+}
+
+.btn--blue:hover {
+  border-color: #6173ff;
+  transform: scale(0.98);
+}
+
+.btn--blue:hover::before {
+  transform: scaleY(1);
+  transform-origin: top;
 }
 
 * {

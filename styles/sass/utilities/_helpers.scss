@@ -65,6 +65,7 @@
 
 /* Buttons */
 .btn {
+    position: relative;
     font-family: $ff-primary;
     font-size: 0.88rem;
     font-weight: 600;
@@ -74,6 +75,10 @@
     width: 100%;
     height: 51px;
     border-radius: 50px;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
 
     @media (min-width: 769px) {
         height: 55px;
@@ -81,11 +86,38 @@
         font-size: 1rem;
     }
 
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: transform 300ms ease-in-out;
+    }
+
     &--cyan {
         background: $c-cyan-strong;
         border-bottom: 3px solid darken($c-cyan-strong, 10);
         margin-bottom: 20px;
         box-shadow: 0 8px 20px transparentize($c-cyan-strong, 0.6);
+        
+        &::before {
+            background: lighten($c-cyan-strong, 5);
+        }
+
+        &:hover {
+            border-color: $c-cyan-strong;
+            transform: scale(0.98);
+            
+            &::before {
+                transform: scaleY(1);
+                transform-origin: top;
+            }
+        }
 
         @media (min-width: 769px) {
             margin-bottom: 0;
@@ -97,5 +129,19 @@
         background: $c-blue-light;
         border-bottom: 3px solid darken($c-blue-light, 5);
         box-shadow: 0 8px 20px transparentize($c-blue-light, 0.6);
+
+        &::before {
+            background: lighten($c-blue-light, 5);
+        }
+
+        &:hover {
+            border-color: $c-blue-light;
+            transform: scale(0.98);
+
+            &::before {
+                transform: scaleY(1);
+                transform-origin: top;
+            }
+        }
     }
 }
