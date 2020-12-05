@@ -1,5 +1,12 @@
 .clipboard {
+    $root: &;
     margin-bottom: 66px;
+
+    &.active {
+        #{$root}__hero {
+            animation: clipboard-slide-down 1500ms forwards;
+        }
+    }
 
     &__container {
         display: flex;
@@ -21,6 +28,8 @@
     }
 
     &__hero {
+        opacity: 0;
+        
         img {
             width: 100%;
         }
