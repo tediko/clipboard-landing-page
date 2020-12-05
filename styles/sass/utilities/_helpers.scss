@@ -86,6 +86,11 @@
         font-size: 1rem;
     }
 
+    &:focus {
+        outline: 1px dashed transparentize($c-blue-light, 0.8);
+        outline-offset: 5px;
+    }
+
     &::before {
         position: absolute;
         content: '';
