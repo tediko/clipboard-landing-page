@@ -491,6 +491,7 @@ body {
 }
 
 .footer__container {
+  position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -626,6 +627,35 @@ body {
 }
 
 .footer__socials-link:hover {
+  color: #26baa4;
+}
+
+.footer__attribution {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  color: #9fabb2;
+  font-size: 0.8rem;
+  gap: 20px;
+  opacity: 0.5;
+  padding: 10px;
+}
+
+@media (min-width: 769px) {
+  .footer__attribution {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.footer__attribution a {
+  color: #4c545d;
+  text-decoration: none;
+  transition: color 250ms ease-in;
+}
+
+.footer__attribution a:hover {
+  text-decoration: underline;
   color: #26baa4;
 }
 /*# sourceMappingURL=main.css.map */

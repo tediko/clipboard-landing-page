@@ -3,6 +3,7 @@
     background: lighten($c-blue-grayish, 30);
 
     &__container {
+        position: relative;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -129,6 +130,33 @@
         }
 
         &:hover {
+            color: $c-cyan-strong;
+        }
+    }
+
+    &__attribution {
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        color: $c-blue-grayish;
+        font-size: 0.8rem;
+        gap: 20px;
+        opacity: 0.5;
+        padding: 10px;
+
+        @media (min-width: 769px) {
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        a {
+            color: $c-blue-grayish-dark;
+            text-decoration: none;
+            transition: color 250ms ease-in;
+        }
+    
+        a:hover {
+            text-decoration: underline;
             color: $c-cyan-strong;
         }
     }
