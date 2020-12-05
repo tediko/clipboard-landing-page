@@ -109,7 +109,8 @@
         border-bottom: 3px solid darken($c-cyan-strong, 10);
         margin-bottom: 20px;
         box-shadow: 0 8px 20px transparentize($c-cyan-strong, 0.6);
-        
+        animation: btn-shake-1 1000ms ease-in;
+
         &::before {
             background: lighten($c-cyan-strong, 5);
         }
@@ -134,7 +135,8 @@
         background: $c-blue-light;
         border-bottom: 3px solid darken($c-blue-light, 5);
         box-shadow: 0 8px 20px transparentize($c-blue-light, 0.6);
-
+        animation: btn-shake-2 1000ms ease-in;
+        
         &::before {
             background: lighten($c-blue-light, 5);
         }

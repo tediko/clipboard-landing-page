@@ -1,4 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+@keyframes header-logo-bounce {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes btn-shake-1 {
+  0% {
+    transform: rotate(-3deg);
+  }
+  33% {
+    transform: rotate(3deg);
+  }
+  66% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes btn-shake-2 {
+  0% {
+    transform: rotate(3deg);
+  }
+  33% {
+    transform: rotate(-3deg);
+  }
+  66% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
 @keyframes snippets-slide-left {
   0% {
     opacity: 0;
@@ -169,6 +216,7 @@
   border-bottom: 3px solid #1d907f;
   margin-bottom: 20px;
   box-shadow: 0 8px 20px rgba(38, 186, 164, 0.4);
+  animation: btn-shake-1 1000ms ease-in;
 }
 
 .btn--cyan::before {
@@ -196,6 +244,7 @@
   background: #6173ff;
   border-bottom: 3px solid #475dff;
   box-shadow: 0 8px 20px rgba(97, 115, 255, 0.4);
+  animation: btn-shake-2 1000ms ease-in;
 }
 
 .btn--blue::before {
@@ -253,6 +302,7 @@ body {
 
 .header__logo {
   margin-bottom: 55px;
+  animation: header-logo-bounce 1000ms ease-in-out;
 }
 
 .header__heading {
