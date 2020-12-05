@@ -566,6 +566,11 @@ body {
   text-decoration: none;
 }
 
+.footer__nav-link:focus {
+  outline: 1px dashed rgba(97, 115, 255, 0.2);
+  outline-offset: 5px;
+}
+
 .footer__socials {
   flex: 1;
   display: flex;
@@ -582,5 +587,10 @@ body {
 .footer__socials-link {
   color: #4c545d;
   font-size: 1.4rem;
+}
+
+.footer__socials-link:focus {
+  outline: 1px dashed rgba(97, 115, 255, 0.2);
+  outline-offset: 5px;
 }
 /*# sourceMappingURL=main.css.map */

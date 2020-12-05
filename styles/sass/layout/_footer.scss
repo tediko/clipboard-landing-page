@@ -68,6 +68,11 @@
     &__nav-link {
         color: $c-blue-grayish-dark;
         text-decoration: none;
+
+        &:focus {
+            outline: 1px dashed transparentize($c-blue-light, 0.8);
+            outline-offset: 5px;
+        }
     }
 
     &__socials {
@@ -84,5 +89,10 @@
     &__socials-link {
         color: $c-blue-grayish-dark;
         font-size: 1.4rem;
+
+        &:focus {
+            outline: 1px dashed transparentize($c-blue-light, 0.8);
+            outline-offset: 5px;
+        }
     }
 }
