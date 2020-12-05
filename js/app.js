@@ -1,0 +1,1 @@
+import { default as lazyLoad } from './lazyLoad.js';
