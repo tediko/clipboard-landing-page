@@ -131,6 +131,8 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
   background: url("../../assets/img/bg-header-mobile.png");
   background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
   padding: 0 31px;
 }
 
